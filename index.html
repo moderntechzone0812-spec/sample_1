@@ -42,16 +42,18 @@
             padding: 12px 25px;
             font-size: 1.1em;
             color: #ffffff;
-            background-color: #007bff; /* Primary action color (Blue) */
+            background-color: #ff5722; /* Changed color to orange for visual change */
             border: none;
-            border-radius: 5px;
+            border-radius: 8px; /* Slightly more rounded */
             text-decoration: none;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.1s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .cta-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #e64a19; /* Darker orange on hover */
+            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -59,16 +61,18 @@
 
     <div class="container">
         <h1>Welcome to Our Page</h1>
-        <p>This is a simple landing page designed to showcase a single, clear **Call to Action** (CTA) button.</p>
+        <p>This page features a clear **Call to Action** button that will take you directly to the linked Netlify application.</p>
 
-        <button class="cta-button" onclick="https://astounding-griffin-b49179.netlify.app">
-            Go to Google Now!
+        <!-- The Call to Action Button -->
+        <button class="cta-button" onclick="redirectToNetlify()">
+            Go to Astounding Griffin App!
         </button>
     </div>
 
+    <!-- JavaScript to handle the redirect -->
     <script>
-        function  {
-            // This function changes the browser's current page to Google.com
+        function redirectToNetlify() {
+            // This function changes the browser's current page to the specific Netlify URL.
             window.location.href = "https://astounding-griffin-b49179.netlify.app";
         }
     </script>
